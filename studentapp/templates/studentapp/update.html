@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <H1> Here you can update {{obj.name}} Student </H1>
+
+    <p>
+        <form action="/student/update/{{obj.id}}/" method = 'POST'> {% csrf_token %}
+
+            Name : <input type="text" name = 'uname' value="{{obj.name}}"> <br><br>
+            Marks : <input type="text" name = 'umarks' value = "{{obj.marks}}"> <br><br>
+            Roll Num : <input type="text" name = 'uroll_num' value = "{{obj.roll_num}}"> <br><br>
+    
+            <button type = 'submit'> Update+ </button>
+    
+        </form>
+    </p>
+ 
+</body>
+</html>

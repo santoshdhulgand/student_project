@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body>
+    <nav style = 'text-align: center'>
+        <a href="/student/list/" class = 'btn btn-primary' > All Student </a>
+    </nav>
+
+    <hr>
+
+    <h1> Here you will get {{obj.name}} Student Info </h1>
+
+    <div>
+            <h3> Student name is {{obj.name}} </h3>
+            <h3> Student marks are {{obj.marks}}</h3>
+            <h3> Student roll number is {{obj.roll_num}}</h3>
+            <hr>
+                <a href="/student/update/{{obj.id}}/"> Update+ </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="/student/delete/{{obj.id}}/"> Delete- </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <hr>
+    </div>
+
+</body>
+</html>

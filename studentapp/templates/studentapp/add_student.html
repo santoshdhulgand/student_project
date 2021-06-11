@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <H1> Add Student Here! </H1>
+
+    <p>
+        <form action="/student/add/" method = 'POST'> {% csrf_token %}
+
+            Name : <input type="text" name = 'uname'> <br><br>
+            Marks : <input type="text" name = 'umarks'> <br><br>
+            Roll Num : <input type="text" name = 'uroll_num'> <br><br>
+    
+            <button type = 'submit'> SAVE </button>
+    
+        </form>
+    </p>
+
+</body>
+</html>
